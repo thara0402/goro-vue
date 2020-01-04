@@ -46,8 +46,8 @@ export default Vue.extend({
         alert(e)
       })
     },
-    handleDetail(id:string, season:string) {
-      this.$router.push({ path: 'detail', query: { id: id, season: season }})
+    handleDetail(id:string) {
+      this.$router.push({ path: 'detail', query: { id: id }})
     },
     handleClick(tab:any, event:any) {
       this.getData(parseInt(tab.index))
